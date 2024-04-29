@@ -13,22 +13,28 @@ function carregarInformacoes() {
 
   switch (id) {
     case 'tallarico':
-      precoDefault = 1243
+      precoDefault = 12.43
       tituloDefault = "Vinho Tinto Tallarico"
       descricaoDefault = "Um vinho encorpado e elegante, com aromas de frutas vermelhas e notas de especiarias. Perfeito para acompanhar carnes vermelhas."
       imagemDefault = 'tallarico.png'
       break;
     case 'gato-negro':
-      precoDefault = 5199
+      precoDefault = 51.99
       tituloDefault = "Vinho Tinto Gato Negro Carmenère "
       descricaoDefault = "Um vinho suave e equilibrado, com aromas de frutas negras e toques de baunilha. Ideal para harmonizar com massas e queijos."
       imagemDefault = 'gato-negro.png'
       break;
     case 'dom-bosco':
-      precoDefault = 1290
+      precoDefault = 12.90
       tituloDefault = "Vinho Tinto Dom Bosco"
       descricaoDefault = "Um vinho intenso e complexo, com notas de frutas maduras e especiarias. Ótima escolha para acompanhar pratos de carne suína."
       imagemDefault = 'dom-bosco.webp'
+      break;
+    case 'santa-helena':
+      precoDefault = 45.96
+      tituloDefault = 'Vinho Santa Helena Merlot 750ml'
+      descricaoDefault = 'Um vinho intenso e complexo, com notas de frutas maduras e especiarias. Ótima escolha para acompanhar pratos de carne suína.'
+      imagemDefault = 'santa-helena.png'
       break;
     default:
       precoDefault = 0
@@ -38,7 +44,7 @@ function carregarInformacoes() {
 
   tituloElement.innerText = tituloDefault
   descricaoElement.innerText = descricaoDefault
-  precoElement.innerText = `R$ ${(precoDefault * .01).toLocaleString('pt-br')}`
+  precoElement.innerText = `R$ ${precoDefault.toLocaleString('pt-br')}`
   imagemElement.src = `../images/${imagemDefault}`
   imagemElement.alt = imagemDefault
 }
