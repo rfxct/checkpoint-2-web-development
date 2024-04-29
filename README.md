@@ -14,7 +14,7 @@ Se trata do checkpoint/avaliação para a matéria de Web Development, ministrad
 
 # Membros
 - Marcos Ferreira (RM 556228)
-- Alex Ribeiro (RM 556228)
+- Alex Ribeiro (RM 557356)
 
 # Imagens do Projeto
 O projeto também pode ser acessado [clicando aqui](https://rfxct.github.io/checkpoint-2-web-development/)
