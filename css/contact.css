@@ -1,0 +1,56 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+}
+
+.formulario-contato {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  box-shadow: 0px -1px 10px 0px rgba(0, 0, 0, 0.302);
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 20px;
+  width: 500px;
+}
+
+.formulario-contato .secao-contato {
+  display: flex;
+  flex-direction: column;
+}
+
+.secao-contato input,
+.secao-contato textarea {
+  margin-top: 3px;
+  outline: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+  transition: all 0.3s;
+  border: 2px solid #7a4b4b;
+}
+
+.secao-contato input:focus,
+.secao-contato textarea:focus {
+  border: 2px solid #bb9393;
+}
+
+.formulario-contato button {
+  color: #ddd;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 14px;
+  outline: none;
+  padding: 10px;
+  background-color: #7a4b4b;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.formulario-contato button:hover {
+  background-color: #bb9393;
+}

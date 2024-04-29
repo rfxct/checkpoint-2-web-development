@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="vinho,tinto,vinheria,agnello,vinicola" />
+    <meta
+      name="description"
+      content="Há mais de 15 anos no mercado, a melhor vinheria paulista está agora também na Internet!"
+    />
+
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
+
+    <title>Vinheria Agnello - Contato</title>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <a class="title" href="../">Agnello</a>
+
+      <ul class="menu">
+        <li><a href="../">início</a></li>
+        <li><a href="loja.html">loja</a></li>
+        <li><a href="contato.html">contato</a></li>
+      </ul>
+
+      <div class="cart">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+          <path
+            d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+          />
+        </svg>
+      </div>
+    </nav>
+    <main>
+      <section>
+        <h1>Entre em contato</h1>
+
+        <form class="formulario-contato" onsubmit="enviarContato()">
+          <div class="secao-contato">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" placeholder="John Doe" required />
+          </div>
+
+          <div class="secao-contato">
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="email@dominio.com"
+              required
+            />
+          </div>
+
+          <div class="secao-contato">
+            <label for="telefone">Telefone</label>
+            <input
+              type="tel"
+              name="telefone"
+              placeholder="(11) 99999-9999"
+              required
+            />
+          </div>
+
+          <div class="secao-contato">
+            <label for="nome">Mensagem</label>
+            <textarea
+              name="mensagem"
+              cols="30"
+              rows="6"
+              placeholder="Solicito contato por..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit">enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="contato">
+        <b>Vinheria Agnello</b>
+        <p>11.111.111/1111-80</p>
+        <p>De Segunda à Sexta das 09h às 18h</p>
+        <a href="mapa.html">
+          Rua Costa Aguiar, 1376 - Conj. 12 - Ipiranga, São Paulo - SP,
+          04204-001
+        </a>
+        <br />
+        <p>contato@agnello.wine</p>
+        <p>(11) 99999-9999</p>
+      </div>
+
+      <div class="redes-sociais">
+        <a
+          href="https://facebook.com/vinheria.agnello"
+          rel="noopener noreferrer"
+          target="_blank"
+          >facebook.com/vinheria.agnello
+        </a>
+        <a
+          href="https://instagr.am/vinheria.agnello"
+          rel="noopener noreferrer"
+          target="_blank"
+          >instagr.am/vinheria.agnello</a
+        >
+
+        <a
+          href="https://github.com/rfxct/checkpoint-2-web-development"
+          rel="noopener noreferrer"
+          target="_blank"
+          >github.com/rfxct</a
+        >
+      </div>
+    </footer>
+
+    <script src="../js/contato.js"></script>
+  </body>
+</html>

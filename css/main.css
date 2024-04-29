@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Poppins";
+}
+
+html,
+body,
+main {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+span {
+  font-size: 16px;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 30px;
+
+  color: #ddd;
+  background-color: #6a3d3d;
+
+  position: fixed;
+  width: 100vw;
+  min-height: 88px;
+}
+
+.navbar .title {
+  text-decoration: none;
+  color: #ddd;
+  font-weight: 600;
+  font-size: 30px;
+
+  letter-spacing: -2.5px;
+}
+
+.navbar .cart,
+.navbar .cart svg {
+  width: 24px;
+  height: 24px;
+  fill: #ddd;
+}
+
+.navbar .menu {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar .menu {
+  display: flex;
+  line-height: 3;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style: none;
+
+  letter-spacing: -0.2px;
+}
+
+.navbar .menu li + li {
+  margin-left: 40px;
+}
+
+.navbar .menu a {
+  color: #ddd;
+}
+
+main {
+  padding-top: 88px;
+  height: fit-content;
+}
+
+.footer {
+  display: flex;
+  background: #6a3d3d;
+  color: #ddd;
+  padding: 30px;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.footer > * > a {
+  color: #ddd;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer .contato {
+  line-height: 1.8;
+}
+
+.footer .redes-sociais {
+  display: flex;
+  flex-direction: column;
+}

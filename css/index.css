@@ -1,0 +1,23 @@
+.promocao img {
+  max-width: 100%;
+}
+
+.mais-vendidos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mais-vendidos .products {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.nosso-negocio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
