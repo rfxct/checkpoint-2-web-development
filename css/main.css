@@ -48,13 +48,6 @@ span {
   letter-spacing: -2.5px;
 }
 
-.navbar .cart,
-.navbar .cart svg {
-  width: 24px;
-  height: 24px;
-  fill: #ddd;
-}
-
 .navbar .menu {
   padding: 20px;
   display: flex;
@@ -75,7 +68,7 @@ span {
   margin-left: 40px;
 }
 
-.navbar .menu a {
+.navbar a {
   color: #ddd;
 }
 
