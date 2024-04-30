@@ -111,3 +111,18 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+.external-anchor {
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+  color: #5f76c2;
+  font-size: 18px;
+
+  transition: all 0.2s;
+}
+
+.external-anchor:hover {
+  color: #003cff;
+  font-size: 18px;
+}
