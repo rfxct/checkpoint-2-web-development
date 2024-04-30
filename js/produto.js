@@ -60,3 +60,7 @@ function atualizarValorTotal() {
 function transformarEmBRL(value) {
   return `R$ ${value.toFixed(2)}`
 }
+
+function adicionarAoCarrinho() {
+  alert(`${tituloDefault} adicionado ao carrinho com sucesso`)
+}
