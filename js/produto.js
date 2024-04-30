@@ -2,14 +2,15 @@ let precoDefault = 0,
   tituloDefault = '',
   descricaoDefault = '',
   imagemDefault = '',
-  descontoCupom = 1
+  descontoCupom = 0
 
 const tituloElement = document.getElementById('product-title'),
   descricaoElement = document.getElementById('product-description'),
   precoElement = document.getElementById('product-price'),
   imagemElement = document.getElementById('product-image'),
   quantidadeElement = document.getElementById('product-amount'),
-  totalElement = document.getElementById('total')
+  totalElement = document.getElementById('total'),
+  sugestaoElement = document.getElementById('product-suggestion')
 
 function carregarInformacoes() {
   const id = new URLSearchParams(location.search).get('id')
@@ -51,10 +52,11 @@ function carregarInformacoes() {
   imagemElement.src = `../images/${imagemDefault}`
   imagemElement.alt = imagemDefault
   totalElement.innerText = transformarEmBRL(precoDefault)
+  sugestaoElement.href = `sugestoes.html${location.search}`
 }
 
 function atualizarValorTotal() {
-  const totalValue = precoDefault * parseInt(quantidadeElement.value || 0) * descontoCupom
+  const totalValue = precoDefault * parseInt(quantidadeElement.value || 0) * (1 - descontoCupom)
   totalElement.innerText = transformarEmBRL(totalValue)
 }
 
@@ -69,10 +71,10 @@ function adicionarAoCarrinho() {
 function atualizarValorCupom() {
   const cupomElement = document.getElementById('cupom')
 
-  if (cupomElement.value === 'FIAP2024') {
-    descontoCupom = 0.9
+  if (String(cupomElement.value).toUpperCase() === 'FIAP2024') {
+    descontoCupom = 0.1
   } else {
-    descontoCupom = 1
+    descontoCupom = 0
   }
 
   atualizarValorTotal()
