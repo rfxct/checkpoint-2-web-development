@@ -70,7 +70,7 @@ function atualizarValorCupom() {
   const cupomElement = document.getElementById('cupom')
 
   if (cupomElement.value === 'FIAP2024') {
-    descontoCupom = 1.10
+    descontoCupom = 0.9
   } else {
     descontoCupom = 1
   }
