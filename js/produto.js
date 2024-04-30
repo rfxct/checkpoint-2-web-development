@@ -6,7 +6,9 @@ let precoDefault = 0,
 const tituloElement = document.getElementById('product-title'),
   descricaoElement = document.getElementById('product-description'),
   precoElement = document.getElementById('product-price'),
-  imagemElement = document.getElementById('product-image')
+  imagemElement = document.getElementById('product-image'),
+  quantidadeElement = document.getElementById('product-amount'),
+  totalElement = document.getElementById('total')
 
 function carregarInformacoes() {
   const id = new URLSearchParams(location.search).get('id')
@@ -44,7 +46,17 @@ function carregarInformacoes() {
 
   tituloElement.innerText = tituloDefault
   descricaoElement.innerText = descricaoDefault
-  precoElement.innerText = `R$ ${precoDefault.toLocaleString('pt-br')}`
+  precoElement.innerText = transformarEmBRL(precoDefault)
   imagemElement.src = `../images/${imagemDefault}`
   imagemElement.alt = imagemDefault
+  totalElement.innerText = transformarEmBRL(precoDefault)
+}
+
+function atualizarValorTotal() {
+  const totalValue = precoDefault * parseInt(quantidadeElement.value || 0)
+  totalElement.innerText = transformarEmBRL(totalValue)
+}
+
+function transformarEmBRL(value) {
+  return `R$ ${value.toFixed(2)}`
 }

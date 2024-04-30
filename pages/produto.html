@@ -3,20 +3,121 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    
+
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/product.css" />
 
-    <title>Document</title>
+    <title>Vinheria Agnello - Comprar</title>
   </head>
   <body onload="carregarInformacoes()">
-    <div class="product-details">
-      <img src="" alt="" id="product-image" />
-      <h1 id="product-title"></h1>
-      <p id="product-description"></p>
-      <span id="product-price"></span>
-    </div>
+    <nav class="navbar">
+      <a class="title" href=".">Agnello</a>
+
+      <ul class="menu">
+        <li><a href="../">início</a></li>
+        <li><a href="../pages/contato.html">contato</a></li>
+      </ul>
+
+      <div class="cart">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+          <path
+            d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+          />
+        </svg>
+      </div>
+    </nav>
+
+    <main>
+      <div class="product-container">
+        <div class="product-image">
+          <img src="" height="500px" alt="" id="product-image" />
+        </div>
+
+        <div class="product-details">
+          <h1 id="product-title"></h1>
+          <p id="product-description"></p>
+
+          <div class="product-offer">
+            <div class="product-offer-header">
+              <b>PROMOÇÃO TERMINA EM: </b>
+              7 dias
+            </div>
+
+            <div class="product-offer-content">
+              <span class="product-offer-content-detail">
+                <b>FRETE GRÁTIS: </b>
+                Sul, Sudeste, Centro-oeste
+              </span>
+            </div>
+          </div>
+
+          <div class="product-billing">
+            <div class="product-billing-row">
+              <span class="product-price" id="product-price"></span>
+
+              <p>
+                À vista no PIX <br />
+                Em até 10x sem juros no cartão
+              </p>
+            </div>
+
+            <div>
+              <label for="amount">Quantidade</label>
+              <div class="product-billing-row">
+                <input
+                  type="number"
+                  name="product-amount"
+                  class="product-amount"
+                  id="product-amount"
+                  value="1"
+                  oninput="atualizarValorTotal()"
+                />
+                <button class="product-buy-button">Comprar</button>
+              </div>
+              <span>Valor Total: <span id="total"></span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="contato">
+        <b>Vinheria Agnello</b>
+        <p>11.111.111/1111-80</p>
+        <p>De Segunda à Sexta das 09h às 18h</p>
+        <a href="mapa.html">
+          Rua Costa Aguiar, 1376 - Conj. 12 - Ipiranga, São Paulo - SP,
+          04204-001
+        </a>
+        <br />
+        <p>contato@agnello.wine</p>
+        <p>(11) 99999-9999</p>
+      </div>
+
+      <div class="redes-sociais">
+        <a
+          href="https://facebook.com/vinheria.agnello"
+          rel="noopener noreferrer"
+          target="_blank"
+          >facebook.com/vinheria.agnello
+        </a>
+        <a
+          href="https://instagr.am/vinheria.agnello"
+          rel="noopener noreferrer"
+          target="_blank"
+          >instagr.am/vinheria.agnello</a
+        >
+
+        <a
+          href="https://github.com/rfxct/checkpoint-2-web-development"
+          rel="noopener noreferrer"
+          target="_blank"
+          >github.com/rfxct</a
+        >
+      </div>
+    </footer>
+
     <script src="../js/produto.js"></script>
   </body>
 </html>
