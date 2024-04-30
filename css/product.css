@@ -53,7 +53,7 @@ main {
   font-size: 14px;
   border-radius: 5px;
   border: 2px solid #3e963e;
-  width: 350px;
+  width: 250px;
   height: 60px;
 
   transition: all 0.2s;
@@ -85,6 +85,6 @@ main {
   padding: 10px;
   border: 2px solid #797979;
   border-radius: 5px;
-  width: 350px;
+  width: 250px;
   height: 60px;
 }
