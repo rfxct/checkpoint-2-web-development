@@ -1,7 +1,8 @@
 let precoDefault = 0,
   tituloDefault = '',
   descricaoDefault = '',
-  imagemDefault = ''
+  imagemDefault = '',
+  descontoCupom = 1
 
 const tituloElement = document.getElementById('product-title'),
   descricaoElement = document.getElementById('product-description'),
@@ -53,7 +54,7 @@ function carregarInformacoes() {
 }
 
 function atualizarValorTotal() {
-  const totalValue = precoDefault * parseInt(quantidadeElement.value || 0)
+  const totalValue = precoDefault * parseInt(quantidadeElement.value || 0) * descontoCupom
   totalElement.innerText = transformarEmBRL(totalValue)
 }
 
@@ -63,4 +64,16 @@ function transformarEmBRL(value) {
 
 function adicionarAoCarrinho() {
   alert(`${tituloDefault} adicionado ao carrinho com sucesso`)
+}
+
+function atualizarValorCupom() {
+  const cupomElement = document.getElementById('cupom')
+
+  if (cupomElement.value === 'FIAP2024') {
+    descontoCupom = 1.10
+  } else {
+    descontoCupom = 1
+  }
+
+  atualizarValorTotal()
 }
