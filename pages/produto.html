@@ -52,29 +52,49 @@
           </div>
 
           <div class="product-billing">
-            <div class="product-billing-row">
+            <div class="col">
+              <div class="row">
+                <div class="col">
+                  <label for="amount">Quantidade</label>
+                  <input
+                    type="number"
+                    name="product-amount"
+                    class="product-input"
+                    id="product-amount"
+                    value="1"
+                    oninput="atualizarValorTotal()"
+                  />
+                </div>
+
+                <div class="col">
+                  <label for="cupom">Cupom</label>
+                  <input
+                    type="text"
+                    name="cupom"
+                    class="product-input"
+                    id="cupom"
+                    placeholder="CUPOM2024"
+                    oninput="atualizarValorCupom()"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="row" style="margin-top: 10px;">
               <span class="product-price" id="product-price"></span>
 
-              <p>
-                À vista no PIX <br />
-                Em até 10x sem juros no cartão
-              </p>
+              <button
+                class="product-buy-button"
+                type="button"
+                onclick="adicionarAoCarrinho()"
+              >
+                Comprar
+              </button>
             </div>
 
             <div>
-              <label for="amount">Quantidade</label>
-              <div class="product-billing-row">
-                <input
-                  type="number"
-                  name="product-amount"
-                  class="product-amount"
-                  id="product-amount"
-                  value="1"
-                  oninput="atualizarValorTotal()"
-                />
-                <button class="product-buy-button" type="button" onclick="adicionarAoCarrinho()">Comprar</button>
-              </div>
-              <span>Valor Total: <span id="total"></span></span>
+              Total:
+              <span id="total"></span>
             </div>
           </div>
         </div>

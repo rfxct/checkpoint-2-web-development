@@ -43,11 +43,6 @@ main {
   margin-top: 20px;
 }
 
-.product-details .product-billing-row {
-  display: flex;
-  justify-content: space-between;
-}
-
 .product-buy-button {
   padding: 10px 50px;
   background-color: #2c942c;
@@ -58,7 +53,8 @@ main {
   font-size: 14px;
   border-radius: 5px;
   border: 2px solid #3e963e;
-  width: 55%;
+  width: 350px;
+  height: 60px;
 
   transition: all 0.2s;
 }
@@ -84,9 +80,11 @@ main {
   color: #fff;
 }
 
-.product-amount {
+.product-input {
   font-size: 14px;
   padding: 10px;
   border: 2px solid #797979;
   border-radius: 5px;
+  width: 350px;
+  height: 60px;
 }
