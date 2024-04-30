@@ -22,8 +22,11 @@ O projeto também pode ser acessado [clicando aqui](https://rfxct.github.io/chec
 ### Página Inicial
 <img src="docs/index.png" >
 
-### Loja
-<img src="docs/loja.png" >
+### Produto
+<img src="docs/produto.png" >
+
+### Login
+<img src="docs/login.png" >
 
 ### Contato
 <img src="docs/contato.png" >
